@@ -1,529 +1,435 @@
-<!doctype html>
-<html class="theme-next use-motion ">
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
 <head>
+  <title>前端研究中心</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="前端研究中心">
+    <meta name="author" content="黄志文">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/hexo/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="前端研究中心" type="application/atom+xml">
+    <link rel="stylesheet" href="/hexo/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/hexo/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/hexo/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/hexo/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/hexo/js/html5shiv.min.js"></script>
+    <script src="/hexo/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/hexo/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-<link rel="stylesheet" type="text/css" href="/hexo/css/main.css?v=0.4.3"/>
-
-
-
-
-  <meta name="keywords" content="Hexo,next" />
-
-
-
-
-
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var CONFIG = {
-    scheme: '',
-    analytics: {
-      google: ''
-    },
-    sidebar: 'post'
-  };
-</script>
-
-
-
-
-  <title> Hexo </title>
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
 </head>
 
-<body>
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
+<!--
+<body class="home-template">
+-->
+<body id="index" class="lightnav animsition">
 
-  <div class="container one-column 
-   page-home 
-">
-    <div class="headband"></div>
+      <!-- ============================ Off-canvas navigation =========================== -->
 
-    <div id="header" class="header">
-      <div class="header-inner">
-        <h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/hexo/" class="brand">
-      <span class="logo">
-        <i class="icon-logo"></i>
-      </span>
-      <span class="site-title">Hexo</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<div class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu ">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/">
-            <i class="menu-item-icon icon-home"></i> <br />
-            首頁
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives">
-            <i class="menu-item-icon icon-archives"></i> <br />
-            歸檔
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags">
-            <i class="menu-item-icon icon-tags"></i> <br />
-            標籤
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-</div>
-
-
-      </div>
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/hexo/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/hexo/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/hexo/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/hexo/categories/javascript/" class="animsition-link">javascript<small>(2)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/hexo/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/hexo/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
     </div>
-
-    <div id="main" class="main">
-      <div class="main-inner">
-        <div id="content" class="content">
-          
-  <div id="posts" class="posts-expand">
     
-      
+    <!-- ============================ END Off-canvas navigation =========================== -->
 
-  <div class="post post-type-normal ">
-    <div class="post-header">
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
 
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/hexo/2015/06/16/2012-04-05-javascript-syntax-trap/">
-                细数 javascript 容易被忽略的语法陷阱
-              </a>
-            
-          
-        </h1>
-      
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
 
-      <div class="post-meta">
-        <span class="post-time">
-          發表於 2015-06-16
-        </span>
+        <!-- ============================ Header & Logo bar =========================== -->
 
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分類於
-            
-              <a href="/hexo/categories/javascript/">javascript</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          细数javascript容易被忽略的语法陷阱
-          <div class="post-more-link text-center">
-            <a class="btn" href="/hexo/2015/06/16/2012-04-05-javascript-syntax-trap/">
-              閱讀全文 &raquo;
-            </a>
-          </div>
-          
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/hexo/2015/06/16/2008-11-11-arguments-a-javascript-oddity/">
-                javascript 一怪——arguments 对象
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          發表於 2015-06-16
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分類於
-            
-              <a href="/hexo/categories/javascript/">javascript</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>原文：<a href="http://www.sitepoint.com/arguments-a-javascript-oddity/" target="_blank" rel="external">arguments: A JavaScript Oddity</a></p>
-<p>译文：<a href="http://justjavac.com/javascript/2008/11/11/arguments-a-javascript-oddity.html" target="_blank" rel="external">javascript 一怪：arguments 对象</a></p>
-<hr>
-<p><code>arguments</code> 是一种本地、类数组的对象的名称，它存在于每个函数中。<br>因为生僻，经常被人们忽略，但却是许多魔术般的程序之源。<br>所有主流 js 库都汲取了 <code>arguments</code> 对象的力量。<br>它是每一个 javascript 程序员都应当熟知的东西。</p>
-<p>在任何函数的内部，你都可以通过变量 “arguments” 访问到它，它是一个包含了该函数被调用时提供的所有实参的“数组”。<br>但事实上，它并不是一个真正的数组—— <code>typeof arguments</code> 时会返回“object”。<br>你可以通过数字索引(index)的方式来访问 <code>arguments</code> 中的各个值，它也有和数组一样的 <code>length</code> 属性，<br>但没有如 <code>push</code> 和 <code>pop</code> 之类的数组的方法。</p>
-<h2 id="1、创建灵活的函数">1、创建灵活的函数</h2><p>尽管有它的局限性，但 <code>arguments</code> 仍不失为一个非常有用的对象。<br>例如，你可以创建参数个数不定的函数，如大牛 Dean Edwards 写的 base2 这个库中的 <code>format</code> 方法，秀一下其灵活性：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">format</span>(<span class="params">string</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> args = <span class="built_in">arguments</span>;</span><br><span class="line">	<span class="keyword">var</span> pattern = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"%([1-"</span> + <span class="built_in">arguments</span>.length + <span class="string">"])"</span>, <span class="string">"g"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">String</span>(string).replace(pattern, <span class="function"><span class="keyword">function</span>(<span class="params">match, index</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> args[index];</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>你提供一个模板字符串，用 %1 到 %9 作为占位符加入其中，然后提供最多 9 个其他的参数用以插入，如：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">format(<span class="string">"And the %1 want to know whose %2 you %3"</span>, <span class="string">"papers"</span>, <span class="string">"shirt"</span>, <span class="string">"wear"</span>);</span><br></pre></td></tr></table></figure>
-<p>上面这个句代码会返回字符串“And the papers want to know whose shirt you wear”</p>
-<p>你可能已经注意到，在 <code>format</code> 函数定义时我们只指定了 <code>string</code> 这一个参数。<br>javascript 允许我们给一个函数传递任意多个参数，而不管函数定义时形参是多少个，<br>而且，<code>arguments</code> 对象可以访问到所有的实参。</p>
-<h2 id="2、转化为真正的数组">2、转化为真正的数组</h2><p>尽管 <code>arguments</code> 不是一个真正的数组，但使用标准的数组方法 <code>slice</code>，我们可以很容易的将它转化一个真正的数组，像这样：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</span><br></pre></td></tr></table></figure>
-<p><code>args</code> 变量现在是一个包含了 <code>arguments</code> 对象所有值的数组了。</p>
-<h2 id="3、创建预置参数的函数">3、创建预置参数的函数</h2><p>用 <code>arguments</code> 对象，我们可以让玩转各种 javascript trick。<br>见如下 <code>makeFunc</code> 函数的定义。<br>这个函数允许你代入一个函数引用和任意数量的参数给它，它会返回一个调用你指定的函数的匿名函数，<br>并在函数被调用时，一并代入预置参数和其它新参数。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">makeFunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</span><br><span class="line">	<span class="keyword">var</span> func = args.shift();</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> func.apply(<span class="literal">null</span>, args.concat(<span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>)));</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>代入 <code>makeFunc</code> 函数的第一个参数是你想调用的函数的引用(是的，在这个简单的例子中未做错误验证。)<br>并且它已从 <code>arguments</code> 数组中移除。<br>而后，<code>makeFunc</code> 返回一个使用 <code>Function</code> 对象的 <code>apply</code> 方法的匿名函数，用以调用你指定的那个函数。</p>
-<p><code>apply</code> 的第一个参数指向这个函数被调用时的作用域——基本上就是关键字 <code>this</code> 所指向的被调用的那个函数内部。<br>就现在而言，这个有点高级了，我们就先设为 <code>null</code> 好了。<br>第二个参数是一组将从该函数(匿名函数)的 <code>arguments</code> 对象转化而来的值的数组。<br><code>makeFunc</code> 把原始的值的数组和匿名函数代入的 <code>arguments</code> 数组连结，并将它作为参数代入被调用的函数。</p>
-<p>假如说，你想输出一条总是一个样的“模板信息”。<br>为了让你每次调用 <code>format</code> 函数时，不用不厌其烦的引用该模板文字，<br>你可以使用 <code>makeFunc</code> 这个实用的函数来返回一个会为你自动调用 <code>format</code> 函数并填充模板参数的函数：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> majorTom = makeFunc(format, <span class="string">"This is Major Tom to ground control. I'm %1."</span>);</span><br></pre></td></tr></table></figure>
-<p>你可以像这样重复调用 <code>majorTom</code> 函数：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">majorTom(<span class="string">"stepping through the door"</span>);</span><br><span class="line">majorTom(<span class="string">"floating in a most peculiar way"</span>);</span><br></pre></td></tr></table></figure>
-<p>每次调用 <code>majorTom</code> 函数时，它会调用 <code>format</code> 函数并代入第一个参数和既定的模板文字。<br>上面的函数将返回：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"This is Major Tom to ground control. I'm stepping through the door."</span></span><br><span class="line"><span class="string">"This is Major Tom to ground control. I'm floating in a most peculiar way."</span></span><br></pre></td></tr></table></figure>
-<h2 id="4、创建自引用的函数">4、创建自引用的函数</h2><p>你可能认为这些够酷了——等一下，<code>arguments</code> 还有一个惊喜给你。<br>它还有另一个有用的属性—— <code>callee</code>。<br><code>arguments.callee</code> 包含一个创建 <code>arguments</code> 对象本身的函数的引用。<br>那么我们如何利用它呢？<br><code>arguments.callee</code> 是一种匿名调用自身的便捷方式。</p>
-<p><code>repeat</code> 函数有三个参数——一个函数引用和两个数字。<br>第一个数字指定这个函数被调用多少次，而第二个代表两次调用间的延迟时间(以毫秒计)。</p>
-<p>下面是 <code>repeat</code> 函数的定义：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">repeat</span>(<span class="params">fn, times, delay</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(times-- &gt; <span class="number">0</span>) &#123;</span><br><span class="line">			fn.apply(<span class="literal">null</span>, <span class="built_in">arguments</span>);</span><br><span class="line">			<span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</span><br><span class="line">			<span class="keyword">var</span> self = <span class="built_in">arguments</span>.callee;</span><br><span class="line">			setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;self.apply(<span class="literal">null</span>,args)&#125;, delay);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>repeat</code> 函数通过 <code>arguments.callee</code> 获得其函数内部的匿名函数的引用，定义为变量 <code>self</code>。<br>这样，通过使用 <code>setTimeout</code> 方法，该匿名函数可在一段延时后再次调用自身。</p>
-<p>这里有一个简单得不能再简单的函数，它代入一个字符串并弹出一个包含该字符串的警告框：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">comms</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">	alert(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>我想创建上面这个函数的特别版本，它重复 3 次，每次间隔 2 秒。使用 <code>repeat</code> 函数，我可以这么做：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> somethingWrong = repeat(comms, <span class="number">3</span>, <span class="number">2000</span>);</span><br><span class="line">somethingWrong(<span class="string">"Can you hear me, major tom?"</span>);</span><br></pre></td></tr></table></figure>
-<p><code>somethingWrong</code> 函数的运行结果是：每隔 2 秒弹出警告窗 3 次。</p>
-<p><code>arguments</code> 虽不常用、有点偏门，但充满惊喜，值得去了解！</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/hexo/2015/06/15/hello-world/">
-                Hello World
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          發表於 2015-06-15
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-  </div>
-
-  
-
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">前端研究中心</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
         </div>
 
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <!-- ============================ Hero Image =========================== -->
+
+        <section id="hero" class="scrollme">
+            <div class="container-fluid element-img" style="background: url(/hexo/img/1.jpg) no-repeat center center fixed">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                            <div>
+                            	
+                                <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
+                                <p></p>
+				    			
+                                <h2></h2>
+                                <p>每一个不曾起舞的日子都是对生命的辜负。</p>
+				    			
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <div class="herofade beige-dk"></div>
+            </div>
+        </section>
+
+        <!-- Height spacing helper -->
+        <div class="heightblock"></div>
+        <!-- // End height spacing helper -->
+
+        <!-- ============================ END Hero Image =========================== -->
+      <!-- ============================ Content =========================== -->
+
+<section id="intro">
+    <div class="container">
         
-      </div>
-
-
-      
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      <div class="site-overview">
-        <div class="site-author motion-element">
-          <img class="site-author-image" src="/hexo/images/default_avatar.jpg" alt="John Doe" />
-          <p class="site-author-name">John Doe</p>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/hexo/2015/06/16/2012-04-05-javascript-syntax-trap/">细数 javascript 容易被忽略的语法陷阱</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-06-15T16:20:55.000Z" itemprop="datePublished">
+          2015-06-16
+      </time>
+    
+    
+    | 
+    <a href='/hexo/tags/javascript/'>javascript</a>,
+    
+    <a href='/hexo/tags/语法/'>语法</a>,
+    
+    <a href='/hexo/tags/语法陷阱/'>语法陷阱</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        JavaScript 可算是世界上最流行的编程语言，它曾被 Web 开发设计师贴上噩梦的标签，虽然真正的噩梦其实是 DOM API，这个被大量的开发与设计师随手拈来增强他们的 Web 前端的脚本语言，如今越来越被重视，虽则如此，JavaScript 仍然拥有很多让人费解的东西。
+1. 它以 Java 命名，但并不是 Java 它最初叫 Mocha， 接着改名为 LiveScript，最后才确定命名为 JavaScript， 根据历史记录
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/hexo/2015/06/16/2012-04-05-javascript-syntax-trap/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
         </div>
-        <p class="site-description motion-element"></p>
-        <div class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">文章</span>
-            </a>
-          </div>
-
-          <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">1</span>
-              <span class="site-state-item-name">分類</span>
-              
-          </div>
-
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">標籤</span>
-              </a>
-          </div>
-
-        </div>
-
         
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/hexo/2015/06/16/2008-11-11-arguments-a-javascript-oddity/">javascript 一怪——arguments 对象</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-06-15T16:20:55.000Z" itemprop="datePublished">
+          2015-06-16
+      </time>
+    
+    
+    | 
+    <a href='/hexo/tags/arguments/'>arguments</a>,
+    
+    <a href='/hexo/tags/javascript/'>javascript</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        原文：arguments: A JavaScript Oddity
+译文：javascript 一怪：arguments 对象
 
-        <div class="links-of-author motion-element">
+arguments 是一种本地、类数组的对象的名称，它存在于每个函数中。因为生僻，经常被人们忽略，但却是许多魔术般的程序之源。所有主流 js 库都汲取了 arguments 对象的力量。它是每一个 javascript 程序员都应当熟知的东西。
+在任何函数的内部，你都可以通过变量 “arguments” 访问
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/hexo/2015/06/16/2008-11-11-arguments-a-javascript-oddity/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/hexo/2015/06/15/hello-world/">Hello World</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-06-15T15:22:15.000Z" itemprop="datePublished">
+          2015-06-15
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new p
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/hexo/2015/06/15/hello-world/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <nav class="pagination" role="pagination">
           
+          
+        </nav>
+    </div>
+</section>
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
         </div>
-
-        
-        
-
-      </div>
+    </div>
+</section>
+<!-- ============================ END Content =========================== -->
 
       
+<!-- ============================ Footer =========================== -->
 
-    </div>
-  </div>
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 黄志文. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
 
-
-    </div>
-
-    <div id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">
-  
-  &copy; &nbsp; 
-  2015
-  <span class="with-love">
-    <i class="icon-heart"></i>
-  </span>
-  <span class="author">John Doe</span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
-</div>
-
-<div class="theme-info">
-  主題 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
-  </a>
-</div>
-
-
-
-      </div>
-    </div>
-
-    <div class="back-to-top"></div>
-  </div>
-
-  <script type="text/javascript" src="/hexo/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  
-
-  
-  <script type="text/javascript" src="/hexo/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/hexo/js/fancy-box.js?v=0.4.3"></script>
-
-
-  <script type="text/javascript" src="/hexo/js/helpers.js?v=0.4.3"></script>
-  
-
-  <script type="text/javascript" src="/hexo/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/hexo/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/hexo/js/motion_global.js?v=0.4.3" id="motion.global"></script>
-
-
-
-  <script type="text/javascript" src="/hexo/js/search-toggle.js"></script>
-
-  
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
     });
-  </script>
+</script>
+<script src="/hexo/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/hexo/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/hexo/js/scripts.js"></script><!-- Theme scripts -->
 
-  
-
-  
-  
-  
-
-  
-
-
-
-
-  
-  
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
 
 </body>
 </html>
